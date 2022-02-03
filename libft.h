@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aleger <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: aleger <aleger@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 14:31:30 by aleger            #+#    #+#             */
-/*   Updated: 2021/12/19 18:03:12 by aleger           ###   ########.fr       */
+/*   Updated: 2022/02/01 15:20:12 by aleger           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <unistd.h>
 # include <ctype.h>
 # include <stddef.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -61,5 +62,22 @@ void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
+
+void		ft_putchar(char c);
+int			ft_len(long n);
+char		*ft_unsigned_itoa(unsigned int n);
+int			ft_len_ptr(unsigned long long number);
+void		ft_put_ptr(unsigned long long number);
+int			ft_len_hexa(unsigned int number);
+void		ft_put_hexa(unsigned int number, const char format);
+int			ft_print_char(int c);
+int			ft_print_str(char *str);
+int			ft_print_ptr(unsigned long long ptr);
+int			ft_print_number(int number);
+int			ft_print_unsigned(unsigned int number);
+int			ft_print_hexa(unsigned int number, const char format);
+int			ft_printpercent(void);
+int			ft_print_format(va_list args, const char format);
+int			ft_printf(const char *format, ...);
 
 #endif

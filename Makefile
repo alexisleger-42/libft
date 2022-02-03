@@ -39,6 +39,12 @@ FILES = ft_memset \
 		ft_putendl_fd \
 		ft_putnbr_fd \
 		ft_striteri \
+		ft_printf \
+		ft_print_str \
+		ft_print_ptr \
+		ft_print_number \
+		ft_print_unsigned \
+		ft_print_hexa \
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
